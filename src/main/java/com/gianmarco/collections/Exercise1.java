@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise1 {
-    public record Car(String brand, String model, Year productionYear) {}
 
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();

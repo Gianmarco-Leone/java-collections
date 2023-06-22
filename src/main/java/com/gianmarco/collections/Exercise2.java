@@ -8,8 +8,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Exercise2 {
-    // Invece di creare un nuovo record qui potrei usare lo stesso dell'ex1
-    public record Car(String brand, String model, Year productionYear) {}
 
     public static void main(String[] args) {
         Set<Car> cars = new HashSet<>();
