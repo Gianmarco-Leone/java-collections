@@ -15,9 +15,7 @@
 package com.gianmarco.collections;
 
 import java.time.Year;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Exercise5 {
 
@@ -41,5 +39,20 @@ public class Exercise5 {
         for (Car car : cars) {
             System.out.println(car);
         }
+
+
+        // ESERCIZIO 6
+        //  How could you take your collection of cars from exercise 5 and store them in an array
+        //  efficiently? How could you convert that array of cars back into a list again?
+        Car[] arrayCars = cars.toArray(new Car[0]);
+        List<Car> listOfCars = Arrays.asList(arrayCars);
     }
+
+    // ESERCIZIO 7
+    // What might be a more memory-efficient collection to use to store millions or billions of
+    // objects in the order in which they come, if you don’t know exactly how many objects you’ll
+    // need to store before-hand?
+
+    // Userei LinkedList perchè mi serve una List per mantenere l'ordine degli elementi in input.
+    // Funzionerebbe anche ArrayList ma predisponde occupa più memoria rispetto a LinkedList che invece aumenta dinamicamente.
 }
